@@ -1,7 +1,8 @@
 Step 1 : Generate a ssl certificate 
 Steps to generate ssl certificate 
-open gitbash od command prompt and type mkdir ssl 
-next openssl req -x509 -nodes -days 365 -newkey rsa:2048 -keyout ssl/private_key.pem -out ssl/certificate.pem -subj "//C=US//ST=California//L=San Francisco//O=MyOrganization//OU=MyDepartment//CN=<YOUR_LOCAL_IP>"
+open gitbash or command prompt and type mkdir ssl 
+next type this command
+openssl req -x509 -nodes -days 365 -newkey rsa:2048 -keyout ssl/private_key.pem -out ssl/certificate.pem -subj "//C=US//ST=California//L=San Francisco//O=MyOrganization//OU=MyDepartment//CN=<YOUR_LOCAL_IP>"
 
 Steps 2 : update nginx.conf
 change <YOUR_LOCAL_IP> with your local ip
